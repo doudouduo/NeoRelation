@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8" content="*" />
+    <title>实体关系查询</title>
+    <link th:href="@{assets/css/bootstrap.css}" rel="stylesheet" />
+    <link th:href="@{assets/css/font-awesome.css}" rel="stylesheet" />
+    <link th:href="@{assets/css/custom-styles.css}" rel="stylesheet" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+</head>
+<body>
+    <div id="query-list">
+        <div class="form-group col-lg-12 col-md-12">
+            <label class="large-label">商务智能</label>
+        </div>
+        <div class="form-group col-lg-12 col-md-12">
+            <label class="medium-label">实体1</label>
+            <input class="form-control" type="text" id="entity1" placeholder="请输入实体1" />
+        </div>
+        <div class="form-group col-lg-12 col-md-12">
+            <label class="medium-label">实体2</label>
+            <input class="form-control" type="text" id="entity2" placeholder="请输入实体2（可不填）" />
+        </div>
+        <div class="form-group col-lg-12 col-md-12">
+            <label class="medium-label">跳数</label>
+            <input class="form-control" type="text" id="jump" placeholder="请输入跳数（可不填）"/>
+        </div>
+        <center><button class="btn btn-primary" onclick="search()">查找</button></center>
+    </div>
+    <div id="container"></div>
+    <script th:src="@{assets/js/echarts.js}"></script>
+    <script th:src="@{assets/js/jquery-1.10.2.js}"></script>
+    <script th:src="@{assets/js/dataTool.js}"></script>
+    <script th:src="@{assets/js/myGraph.js}"></script>
+</body>
+</html>
